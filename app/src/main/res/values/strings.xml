@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">InfernodeTela</string>
+    <string name="alterar_o_texto">Alterar o texto</string>
+    <string name="texto">Texto:</string>
+    <string name="result">=</string>
+    <string name="clear">Clear</string>
+    <string name="divis_o">Divisão</string>
+    <string name="multipli_o">Multiplição</string>
+    <string name="subtra_o">Subtração</string>
+    <string name="soma">Soma</string>
+    <string name="_2_numero">2º numero</string>
+    <string name="_1_numero">1º numero</string>
+</resources>
