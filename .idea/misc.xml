@@ -4,11 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_calc_radio.xml" value="0.2" />
-        <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_calculadora_radio.xml" value="0.2" />
+        <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_calculadora_radio.xml" value="0.25" />
         <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_calculadora_simples.xml" value="0.2" />
+        <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_checkbox.xml" value="0.25" />
         <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_main.xml" value="0.1308876811594203" />
         <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_main2.xml" value="0.2" />
         <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_main3.xml" value="0.25" />
+        <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_main4.xml" value="0.25" />
+        <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_main5.xml" value="0.25" />
+        <entry key="..\:/Users/55679/AndroidStudioProjects/InfernodeTela/app/src/main/res/layout/activity_main6.xml" value="0.25" />
       </map>
     </option>
   </component>

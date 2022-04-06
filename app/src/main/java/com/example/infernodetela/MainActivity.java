@@ -1,5 +1,6 @@
 package com.example.infernodetela;
 
+import android.app.AlertDialog;
 import android.app.ListActivity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -10,7 +11,7 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 public class MainActivity extends ListActivity {
-    private static final String [] telas = new String[]{"Alteração de texto","Pedra, Papel ou tesoura","Calculadora Simples", "Calculadora Simples com Radio Group"};
+    private static final String [] telas = new String[]{"Alteração de texto","Pedra, Papel ou tesoura","Calculadora Simples", "Calculadora Simples com Radio Group", "Transformando KM em M/S e M/S em KM","Janela de dialogo","Checkbox + Spinner"};
     private ArrayAdapter<String> meuArrayAdapter;
     private Intent intent;
 
@@ -40,6 +41,18 @@ public class MainActivity extends ListActivity {
                 break;
             case 3:
                 intent = new Intent(MainActivity.this, CalculadoraRadio.class);
+                startActivity(intent);
+                break;
+            case 4:
+                intent = new Intent(MainActivity.this, MainActivity4.class);
+                startActivity(intent);
+                break;
+            case 5:
+               intent = new Intent(MainActivity.this, MainActivity5.class);
+               startActivity(intent);
+                break;
+            case 6:
+                intent = new Intent(MainActivity.this, MainActivity6.class);
                 startActivity(intent);
                 break;
         }

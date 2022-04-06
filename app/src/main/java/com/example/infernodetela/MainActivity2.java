@@ -18,6 +18,7 @@ public class MainActivity2 extends AppCompatActivity {
         txtTexto = findViewById(R.id.txt);
     }
     public void alterarTexto(View view){
+
         txtTexto.setText("Texto alterado");
     }
 }
