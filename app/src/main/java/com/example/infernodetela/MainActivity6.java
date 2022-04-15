@@ -8,6 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -15,11 +16,14 @@ import java.util.ArrayList;
 public class MainActivity6 extends AppCompatActivity {
     private CheckBox checkBox1,checkBox2,checkBox3;
     private Button btnCheck;
+    private TextView txtCheck;
     private Spinner spinner;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main6);
+
+        txtCheck = findViewById(R.id.txtCheck);
 
         checkBox1 = findViewById(R.id.checkBox1);
         checkBox2 = findViewById(R.id.checkBox2);
@@ -31,15 +35,17 @@ public class MainActivity6 extends AppCompatActivity {
         btnCheck.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String texto = "";
                 if(checkBox1.isChecked()){
-                    Toast.makeText(getApplicationContext(),"Check 1 marcado", Toast.LENGTH_SHORT).show();
+                    texto = " Check 1 selecionado - ";
                 }
                 if(checkBox2.isChecked()){
-                    Toast.makeText(getApplicationContext(),"Check 2 marcado", Toast.LENGTH_SHORT).show();
+                    texto = texto  + " Check 2 selecionado - ";
                 }
                 if(checkBox3.isChecked()){
-                    Toast.makeText(getApplicationContext(),"Check 3 marcado", Toast.LENGTH_SHORT).show();
+                    texto = texto  +" Check 3 selecionado - ";
                 }
+                txtCheck.setText(texto);
             }
         });
 
@@ -59,8 +65,20 @@ public class MainActivity6 extends AppCompatActivity {
     AdapterView.OnItemSelectedListener ouvinteSpinner = new AdapterView.OnItemSelectedListener() {
         @Override
         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            if(i == 0) {
+                Toast.makeText(getApplicationContext(),"Opcao 1 marcado", Toast.LENGTH_SHORT).show();
+            }
+            if(i == 1){
+                Toast.makeText(getApplicationContext(),"Opcao 2 marcado", Toast.LENGTH_SHORT).show();
+            }
             if(i == 2){
                 Toast.makeText(getApplicationContext(),"Opcao 3 marcado", Toast.LENGTH_SHORT).show();
+            }
+            if(i == 3){
+                Toast.makeText(getApplicationContext(),"Opcao 4 marcado", Toast.LENGTH_SHORT).show();
+            }
+            if(i == 4){
+                Toast.makeText(getApplicationContext(),"Opcao 5 marcado", Toast.LENGTH_SHORT).show();
             }
         }
 

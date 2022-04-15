@@ -20,7 +20,7 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
 
         btnPedra = findViewById(R.id.btnPedra);
         btnPapel = findViewById(R.id.btnPapel);
-        btnTesoura = findViewById(R.id.btnPapel);
+        btnTesoura = findViewById(R.id.btnTesoura);
         txtRes = findViewById(R.id.txtRes);
         imgApp = findViewById(R.id.imgApp);
 
@@ -34,25 +34,41 @@ public class MainActivity3 extends AppCompatActivity implements View.OnClickList
         int numero = new Random().nextInt(3);
         String[] op = {"pedra","papel","tesoura"};
         String opApp = op[numero];
-        /*switch (opApp){
-            case "pedra":
-                imgApp.setImageResource(R.drawable.pedra);
-                break;
-            case "papel":
-                imgApp.setImageResource(R.drawable.papel);
-                break;
-            case "tesoura":
-                imgApp.setImageResource(R.drawable.tesoura);
-                break;
-        }*/
-        /*switch(view.getId()){
+        if (opApp == "pedra") {
+            imgApp.setImageResource(R.drawable.pedra);
+        }else if(opApp == "papel"){
+            imgApp.setImageResource(R.drawable.papel);
+        }else{
+            imgApp.setImageResource(R.drawable.tesoura);
+        }
+        switch(view.getId()){
             case R.id.btnPedra:
-                if(opApp == "tesoura" && )
+                if(opApp == "papel"){
+                    txtRes.setText("App ganhou");
+                }else if(opApp == "tesoura"){
+                    txtRes.setText("Você ganhou");
+                }else{
+                    txtRes.setText("Deu empate");
+                }
                 break;
             case R.id.btnPapel:
+                if(opApp == "tesoura"){
+                    txtRes.setText("App ganhou");
+                }else if(opApp == "pedra"){
+                    txtRes.setText("Você ganhou");
+                }else{
+                    txtRes.setText("Deu empate");
+                }
                 break;
             case R.id.btnTesoura:
+                if(opApp == "pedra"){
+                    txtRes.setText("App ganhou");
+                }else if(opApp == "papel"){
+                    txtRes.setText("Você ganhou");
+                }else{
+                    txtRes.setText("Deu empate");
+                }
                 break;
-        }*/
+        }
     }
 }

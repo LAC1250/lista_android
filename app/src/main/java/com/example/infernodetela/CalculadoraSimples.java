@@ -9,9 +9,11 @@ import android.widget.TextView;
 
 public class CalculadoraSimples extends AppCompatActivity implements View.OnClickListener {
     private EditText editN1, editN2;
-    private TextView txtResultado;
+    private TextView resultt;
     private Button btnSoma, btnSub, btnMult, btnDiv, btnClear;
-    private Double n1, n2, result;
+    private Double n1;
+    private Double n2;
+    private Double result;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,7 +22,7 @@ public class CalculadoraSimples extends AppCompatActivity implements View.OnClic
 
         editN1 = findViewById(R.id.editN1);
         editN2 = findViewById(R.id.editN2);
-        txtResultado = findViewById(R.id.txtResultado);
+        resultt = findViewById(R.id.resultt);
         btnClear = findViewById(R.id.btnClear);
         btnDiv = findViewById(R.id.btnDiv);
         btnMult = findViewById(R.id.btnMult);
@@ -52,13 +54,12 @@ public class CalculadoraSimples extends AppCompatActivity implements View.OnClic
                 case R.id.btnMult:
                     result = n1 * n2;
                     break;
-                /*case R.id.btnClear:
+                case R.id.btnClear:
                     editN1.setText("");
                     editN2.setText("");
-                    txtResultado.setText("");
-                    break;*/
+                    break;
             }
-            txtResultado.setText(String.format("%.2f", result));
+            resultt.setText(String.format("%.2f", result));
         }
     }
 
